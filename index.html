@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <title>Noah Di Gesù</title>
+    </head>
+    <body>
+        <div class="window draggable" style="width: 45vw; z-index: 1; top: 5%; left: 5%;">
+            <div class="top-bar">
+                <div class="action close"></div>
+                <div class="action minimize"></div>
+                <!-- <div class="action maximize"></div> -->
+                <div class="title">About me</div>
+            </div>
+            <div class="content">
+                <h2>Hey, I’m Noah 👋</h2>
+                <p>
+                    Young developer in the second year of my bachelor's degree with a great interest in cyber security and a growing curiosity about artificial intelligence.<br><br>
+                    
+                    I have been passionate about computer science since I was a kid.<br>
+                    I have therefore developed different skills such as programming in different languages and using different tools in my free time since I was 15 years old and more recently in class.<br><br>
+                    
+                    In my free time I train and learn new skills.<br>
+                    I am always looking for a challenge.
+                </p>
+            </div>
+        </div>
+
+        <div class="window draggable" style="width: 55vw; z-index: 1; top: 25%; left: 23%;">
+            <div class="top-bar">
+                <div class="action close"></div>
+                <div class="action minimize"></div>
+                <!-- <div class="action maximize"></div> -->
+                <div class="title">Portfolio</div>
+            </div>
+            <div class="content">
+                <h2>Hey, I’m Noah 👋</h2>
+                <p>
+                    Young developer in the second year of my bachelor's degree with a great interest in cyber security and a growing curiosity about artificial intelligence.<br><br>
+
+                    I have been passionate about computer science since I was a kid.<br>
+                    I have therefore developed different skills such as programming in different languages and using different tools in my free time since I was 15 years old and more recently in class.<br><br>
+
+                    In my free time I train and learn new skills.<br>
+                    I am always looking for a challenge.
+                </p>
+            </div>
+        </div>
+        
+        <div class="window draggable" style="width: 13vw; z-index: 1; bottom: 10%; left: 17%;">
+            <div class="top-bar">
+                <div class="action close"></div>
+                <div class="action minimize"></div>
+                <!-- <div class="action maximize"></div> -->
+                <div class="title">Logo</div>
+            </div>
+            <div class="content">
+                <img src="images/logo.svg" alt="logo" class="logo">
+            </div>
+        </div>
+
+        <div class="window draggable" style="width: 25vw; z-index: 1; top: 15%; right: 10%;">
+            <div class="top-bar">
+                <div class="action close"></div>
+                <div class="action minimize"></div>
+                <!-- <div class="action maximize"></div> -->
+                <div class="title">Tasks</div>
+            </div>
+            <div class="content">
+                <!-- <div style="text-align: center;"> -->
+                    <span style="text-decoration: line-through; color: #636363;">Eat pasta carbonara 🍝</span><br>
+                    <span>Continue to learn Laravel</span><br>
+                    <span>Learn React.js</span>
+                <!-- </div> -->
+            </div>
+        </div>
+
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="assets/js/drag.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(".window").mousedown(function() {
+            $(this).find('.top-bar .title')
+                .css("font-weight", "600");
+            // $(this).css("z-index", parseInt($(this).css("z-index")) + 1);
+            // console.log(parseInt($(this).css("z-index")) + 1);
+        });
+    </script>
+    </body>
+</html>
