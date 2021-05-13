@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
 
 * {
     margin: 0;
@@ -13,6 +13,7 @@ body {
     height: 100vh;
     overflow: hidden;
     background: url('../../images/body.png') center center no-repeat;
+    background-size: cover;
 }
 
 .window {
@@ -29,9 +30,7 @@ body {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 
     &[toggled="true"] {
-        .top-bar .title {
-            font-weight: 600;
-        }
+        .top-bar .title { font-weight: 600; }
     }
 
     .top-bar {
@@ -41,9 +40,7 @@ body {
         position: relative;
         cursor: grab;
 
-        &:active {
-            cursor: grabbing;
-        }
+        &:active { cursor: grabbing; }
 
         .action {
             width: 12px;
@@ -60,48 +57,33 @@ body {
                 background-color: #EF665F;
                 left: 1.2em;
 
-                &:hover {
-                    background-color: #e26059;
-                }
+                &:hover { background-color: #e26059; }
             }
 
             &.minimize {
                 background-color: #F1BE4C;
-                left: 2.7em;
+                left: 2.3em;
 
-                &:hover {
-                    background-color: #e7b64b;
-                }
+                &:hover { background-color: #e7b64b; }
             }
 
             &.maximize {
                 background-color: #8ECE7A;
-                left: 3.7em;
+                left: 3.5em;
 
-                &:hover {
-                    background-color: #82c26f;
-                }
+                &:hover { background-color: #82c26f; }
             }
 
         }
-        .title {
-            font-weight: 400;
-        }
+        .title { font-weight: 400; }
     }
     .content {
         padding: 2em 3em 3em 3em;
 
-        h2 {
-            color: #373737;
-        }
-        p {
-            margin-top: 1.5em;
-            color: #424449;
-        }
+        h2, h4 {color: #373737; }
+        p { margin-top: 1.5em; color: #424449; }
 
-        .logo {
-            filter: invert(1);
-        }
+        .logo { filter: invert(1); }
 
         span {
             color: #373737;
@@ -109,19 +91,17 @@ body {
             cursor: pointer;
             display: block;
             width: fit-content;
+            transition: text-decoration .7s cubic-bezier(0.075, 0.82, 0.165, 1), opacity .7s cubic-bezier(0.075, 0.82, 0.165, 1);
 
             &[toggled="true"] {
                 text-decoration: line-through;
-                opacity: .7;
+                opacity: .5;
 
-                &::before {
-                    background-color: #373737;
-                }
+                &::before { background-color: #373737; }
             }
 
-            &:not(:first-of-type) {
-                margin-top: .5em;
-            }
+            &:not(:first-of-type) { margin-top: .5em; }
+            &:hover:not([toggled="true"]) { opacity: .8; }
 
             &::before {
                 position: absolute;
@@ -133,6 +113,35 @@ body {
                 transform: translateY(-50%);
                 border-radius: 100%;
                 border: 1px solid #373737;
+                transition: background-color .7s cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+        }
+
+        .projects {
+            text-align: center;
+
+            .project {
+                display: inline-block;
+                vertical-align: middle;
+            
+                .image {
+                    background: url("../../images/projects/project.jpg") no-repeat center center;
+                    background-size: cover;
+                    height: 7em;
+                    width: 7em;
+                    border-radius: 20px;
+                    margin-top: 2em;
+                }
+                
+                &[toggled="true"] .image {
+                    cursor: pointer;
+                    height: 10em;
+                    width: 15em;
+                }
+                
+                &[toggled="false"] .image { opacity: .7; }
+                h4 { margin-top: .8em; }
+                p { margin-top: .3em; }
             }
         }
     }
