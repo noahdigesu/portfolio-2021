@@ -34,6 +34,10 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.window[toggled="true"] .top-bar .title {
+  font-weight: 600;
+}
+
 .window .top-bar {
   padding: .4em 0;
   background: rgba(255, 255, 255, 0.5);
@@ -121,6 +125,15 @@ body {
   width: fit-content;
 }
 
+.window .content span[toggled="true"] {
+  text-decoration: line-through;
+  opacity: .7;
+}
+
+.window .content span[toggled="true"]::before {
+  background-color: #373737;
+}
+
 .window .content span:not(:first-of-type) {
   margin-top: .5em;
 }
@@ -136,9 +149,5 @@ body {
           transform: translateY(-50%);
   border-radius: 100%;
   border: 1px solid #373737;
-}
-
-.window .content span::before:not(:first-of-type) {
-  background-color: #373737;
 }
 /*# sourceMappingURL=style.css.map */
