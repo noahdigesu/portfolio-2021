@@ -116,6 +116,9 @@ body {
   position: relative;
   cursor: pointer;
   display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .window .content span:not(:first-of-type) {

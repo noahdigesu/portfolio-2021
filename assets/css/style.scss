@@ -104,6 +104,7 @@ body {
             position: relative;
             cursor: pointer;
             display: block;
+            width: fit-content;
 
             &:not(:first-of-type) {
                 margin-top: .5em;
