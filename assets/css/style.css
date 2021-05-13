@@ -178,10 +178,12 @@ body {
   width: 7em;
   border-radius: 20px;
   margin-top: 2em;
+  -webkit-transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
 }
 
 .window .content .projects .project[toggled="true"] .image {
-  cursor: pointer;
   height: 10em;
   width: 15em;
 }

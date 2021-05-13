@@ -131,10 +131,11 @@ body {
                     width: 7em;
                     border-radius: 20px;
                     margin-top: 2em;
+                    transition: all .7s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    cursor: pointer;
                 }
                 
                 &[toggled="true"] .image {
-                    cursor: pointer;
                     height: 10em;
                     width: 15em;
                 }
