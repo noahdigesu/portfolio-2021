@@ -1,99 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/animate.min.css"/>
-        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-        <title>Noah Di Gesù</title>
-    </head>
-    <body>
-        <div id="about" class="window glassmorphism draggable" toggled="false" style="width: 45vw; z-index: 1; top: 5vh; left: 5vw;">
-            <div class="top-bar">
-                <div class="action close"></div>
-                <div class="action minimize"></div>
-                <!-- <div class="action maximize"></div> -->
-                <div class="title">About me</div>
-            </div>
-            <div class="content">
-                <h2>Hey, I’m Noah 👋</h2>
-                <p>
-                    Young developer in the second year of my bachelor's degree with a great interest in cyber security and a growing curiosity about artificial intelligence.<br><br>
-                    
-                    I have been passionate about computer science since I was a kid.<br>
-                    I have therefore developed different skills such as programming in different languages and using different tools in my free time since I was 15 years old and more recently in class.<br><br>
-                    
-                    In my free time I train and learn new skills.<br>
-                    I am always looking for a challenge.
-                </p>
-            </div>
-        </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/animate.min.css" />
+		<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+		<title>Noah Di Gesù</title>
+	</head>
+	<body>
+		<div class="windows">
+			<div
+				id="about"
+				class="window glassmorphism draggable"
+				toggled="false"
+				style="width: 45vw; z-index: 1; top: 5vh; left: 5vw"
+			>
+				<div class="top-bar">
+					<div class="action close"></div>
+					<div class="action minimize"></div>
+					<!-- <div class="action maximize"></div> -->
+					<div class="title">About me</div>
+				</div>
+				<div class="content">
+					<h2>Hey, I’m Noah 👋</h2>
+					<p>
+						Young developer in the second year of my bachelor's
+						degree with a great interest in cyber security and a
+						growing curiosity about artificial intelligence.<br /><br />
 
-        <div id="work" class="window glassmorphism draggable" toggled="true" style="height: 23em; width: 55vw; z-index: 1; top: 20vh; left: 23vw;">
-            <div class="top-bar">
-                <div class="action close"></div>
-                <div class="action minimize"></div>
-                <div class="action maximize"></div>
-                <div class="title">My work</div>
-            </div>
-            <div class="content">
-                <div class="projects">
-                    <div class="project" id="first-project-2019" toggled="false">
-                        <a href="https://www.instagram.com" target="_blank" style="pointer-events: none;"><div class="image"></div>
-                            <h4>&nbsp;</h4><br>
-                            <p>&nbsp;</p>
-                        </a>
-                    </div>
-                    <div class="project" id="money-manager-2021" toggled="true" style="margin: 0 1.5em;">
-                        <a href="https://www.facebook.com" target="_blank"><div class="image"></div>
-                            <h4>Money manager</h4><br>
-                            <p>2021</p>
-                        </a>
-                    </div>
-                    <div class="project" id="last-project-2020" toggled="false">
-                        <a href="https://www.twitter.com" target="_blank" style="pointer-events: none;"><div class="image"></div>
-                            <h4>&nbsp;</h4><br>
-                            <p>&nbsp;</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div id="logo" class="window glassmorphism draggable" toggled="false" style="width: 13vw; z-index: 1; top: 60vh; left: 17vw;">
-            <div class="top-bar">
-                <div class="action close"></div>
-                <div class="action minimize"></div>
-                <!-- <div class="action maximize"></div> -->
-                <div class="title">logo.png</div>
-            </div>
-            <div class="content">
-                <img src="images/logo.svg" draggable="false" alt="logo" class="logo">
-            </div>
-        </div>
+						I have been passionate about computer science since I
+						was a kid.<br />
+						I have therefore developed different skills such as
+						programming in different languages and using different
+						tools in my free time since I was 15 years old and more
+						recently in class.<br /><br />
 
-        <div id="tasks" class="window glassmorphism draggable" toggled="false" style="width: 25vw; z-index: 1; top: 15vh; right: 10vw;">
-            <div class="top-bar">
-                <div class="action close"></div>
-                <div class="action minimize"></div>
-                <!-- <div class="action maximize"></div> -->
-                <div class="title">Tasks</div>
-            </div>
-            <div class="content" style="width: -moz-fit-content; width: -webkit-fit-content; width: fit-content; margin: 0 auto;">
-                <span class="task" toggled="true">Eat pasta carbonara 🍝</span><br>
-                <span class="task" toggled="false">Continue to learn Laravel</span><br>
-                <span class="task" toggled="false">Learn React.js</span>
-            </div>
-        </div>
+						In my free time I train and learn new skills.<br />
+						I am always looking for a challenge.
+					</p>
+				</div>
+			</div>
 
-        <div class="bottom-bar glassmorphism"></div>
+			<div
+				id="work"
+				class="window glassmorphism draggable"
+				toggled="false"
+				style="
+					height: 23em;
+					width: 55vw;
+					z-index: 1;
+					top: 20vh;
+					left: 23vw;
+				"
+			>
+				<div class="top-bar">
+					<div class="action close"></div>
+					<div class="action minimize"></div>
+					<div class="action maximize"></div>
+					<div class="title">My work</div>
+				</div>
+				<div class="content">
+					<div class="projects">
+						<div
+							class="project"
+							id="first-project-2019"
+							toggled="false"
+						>
+							<a
+								href="https://www.instagram.com"
+								target="_blank"
+								style="pointer-events: none"
+								><div class="image"></div>
+								<h4>&nbsp;</h4>
+								<br />
+								<p>&nbsp;</p>
+							</a>
+						</div>
+						<div
+							class="project"
+							id="money-manager-2021"
+							toggled="true"
+							style="margin: 0 1.5em"
+						>
+							<a href="https://www.facebook.com" target="_blank"
+								><div class="image"></div>
+								<h4>Money manager</h4>
+								<br />
+								<p>2021</p>
+							</a>
+						</div>
+						<div
+							class="project"
+							id="last-project-2020"
+							toggled="false"
+						>
+							<a
+								href="https://www.twitter.com"
+								target="_blank"
+								style="pointer-events: none"
+								><div class="image"></div>
+								<h4>&nbsp;</h4>
+								<br />
+								<p>&nbsp;</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        <script src="assets/js/interact.min.js"></script>
-        <script src="assets/js/drag.js"></script>
-        <script src="assets/js/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="assets/js/handleWindow.js"></script>
-        <script src="assets/js/tasks.js"></script>
-        <script src="assets/js/work.js"></script>
-    </body>
+			<div
+				id="logo"
+				class="window glassmorphism draggable"
+				toggled="false"
+				style="width: 13vw; z-index: 1; top: 60vh; left: 17vw"
+			>
+				<div class="top-bar">
+					<div class="action close"></div>
+					<div class="action minimize"></div>
+					<!-- <div class="action maximize"></div> -->
+					<div class="title">logo.png</div>
+				</div>
+				<div class="content">
+					<img
+						src="images/logo.svg"
+						draggable="false"
+						alt="logo"
+						class="logo"
+					/>
+				</div>
+			</div>
+
+			<div
+				id="tasks"
+				class="window glassmorphism draggable"
+				toggled="false"
+				style="width: 25vw; z-index: 1; top: 15vh; right: 10vw"
+			>
+				<div class="top-bar">
+					<div class="action close"></div>
+					<div class="action minimize"></div>
+					<!-- <div class="action maximize"></div> -->
+					<div class="title">Tasks</div>
+				</div>
+				<div
+					class="content"
+					style="
+						width: -moz-fit-content;
+						width: -webkit-fit-content;
+						width: fit-content;
+						margin: 0 auto;
+					"
+				>
+					<span class="task" toggled="true"
+						>Eat pasta carbonara 🍝</span
+					><br />
+					<span class="task" toggled="false"
+						>Continue to learn Laravel</span
+					><br />
+					<span class="task" toggled="false">Learn React.js</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="dash glassmorphism"></div>
+
+		<script src="assets/js/interact.min.js"></script>
+		<script src="assets/js/drag.js"></script>
+		<script
+			src="assets/js/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<script src="assets/js/handleWindow.js"></script>
+		<script src="assets/js/tasks.js"></script>
+		<script src="assets/js/work.js"></script>
+	</body>
 </html>
