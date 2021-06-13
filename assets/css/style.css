@@ -4,6 +4,8 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  /* text-rendering: optimizeSpeed;
+	image-rendering: optimizeSpeed; */
 }
 
 body {
@@ -87,8 +89,8 @@ body {
 }
 
 .windows .window .top-bar .action {
-  width: 12px;
-  height: 12px;
+  width: 11px;
+  height: 11px;
   content: "";
   border-radius: 100%;
   cursor: pointer;
@@ -184,8 +186,8 @@ body {
 
 .windows .window .content .task::before {
   position: absolute;
-  width: 12px;
-  height: 12px;
+  width: 11px;
+  height: 11px;
   content: "";
   left: -22px;
   top: 50%;
@@ -274,7 +276,7 @@ body {
 
 .dash[toggled="true"] {
   height: 4em;
-  width: 21%;
+  width: 18em;
 }
 
 .dash .icon {

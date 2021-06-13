@@ -14,7 +14,7 @@
 				id="about"
 				class="window glassmorphism draggable"
 				toggled="false"
-				style="width: 45vw; z-index: 1; top: 5vh; left: 5vw"
+				style="width: 38em; z-index: 1; top: 5vh; left: 5vw"
 			>
 				<div class="top-bar">
 					<div class="action close"></div>
@@ -49,10 +49,11 @@
 				toggled="false"
 				style="
 					height: 23em;
-					width: 55vw;
-					z-index: 1;
-					top: 20vh;
-					left: 23vw;
+					width: 45em;
+					z-index: 2;
+					top: 25vh;
+					left: 25vw;
+					right: 25vw;
 				"
 			>
 				<div class="top-bar">
@@ -71,7 +72,7 @@
 							<a
 								href="https://www.instagram.com"
 								target="_blank"
-								style="pointer-events: none"
+								style="pointer-events: none !important"
 								><div class="image"></div>
 								<h4>&nbsp;</h4>
 								<br />
@@ -99,7 +100,7 @@
 							<a
 								href="https://www.twitter.com"
 								target="_blank"
-								style="pointer-events: none"
+								style="pointer-events: none !important"
 								><div class="image"></div>
 								<h4>&nbsp;</h4>
 								<br />
@@ -114,7 +115,7 @@
 				id="logo"
 				class="window glassmorphism draggable"
 				toggled="false"
-				style="width: 13vw; z-index: 1; top: 60vh; left: 17vw"
+				style="width: 11em; z-index: 3; top: 60vh; left: 17vw"
 			>
 				<div class="top-bar">
 					<div class="action close"></div>
@@ -136,7 +137,7 @@
 				id="tasks"
 				class="window glassmorphism draggable"
 				toggled="false"
-				style="width: 25vw; z-index: 1; top: 15vh; right: 10vw"
+				style="width: 20em; z-index: 4; top: 15vh; right: 10vw"
 			>
 				<div class="top-bar">
 					<div class="action close"></div>
@@ -176,5 +177,10 @@
 		<script src="assets/js/handleWindow.js"></script>
 		<script src="assets/js/tasks.js"></script>
 		<script src="assets/js/work.js"></script>
+		<script>
+			if (navigator.appVersion.indexOf("Chrome/") != -1) {
+				$("body").css("font-size", ".9em");
+			}
+		</script>
 	</body>
 </html>
