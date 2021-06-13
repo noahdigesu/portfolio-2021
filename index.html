@@ -9,7 +9,7 @@
         <title>Noah Di Gesù</title>
     </head>
     <body>
-        <div class="window draggable" toggled="false" style="width: 45vw; z-index: 1; top: 5vh; left: 5vw;">
+        <div id="about" class="window glassmorphism draggable" toggled="false" style="width: 45vw; z-index: 1; top: 5vh; left: 5vw;">
             <div class="top-bar">
                 <div class="action close"></div>
                 <div class="action minimize"></div>
@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        <div class="window draggable" toggled="true" style="width: 55vw; z-index: 1; top: 20vh; left: 23vw;">
+        <div id="work" class="window glassmorphism draggable" toggled="true" style="height: 23em; width: 55vw; z-index: 1; top: 20vh; left: 23vw;">
             <div class="top-bar">
                 <div class="action close"></div>
                 <div class="action minimize"></div>
@@ -40,37 +40,40 @@
             <div class="content">
                 <div class="projects">
                     <div class="project" id="first-project-2019" toggled="false">
-                        <a href="" style="pointer-events: none;"><div class="image"></div></a>
-                        <h4>&nbsp;</h4>
-                        <p>&nbsp;</p>
+                        <a href="https://www.instagram.com" target="_blank" style="pointer-events: none;"><div class="image"></div>
+                            <h4>&nbsp;</h4><br>
+                            <p>&nbsp;</p>
+                        </a>
                     </div>
                     <div class="project" id="money-manager-2021" toggled="true" style="margin: 0 1.5em;">
-                        <a href=""><div class="image"></div></a>
-                        <h4>Money manager</h4>
-                        <p>2021</p>
+                        <a href="https://www.facebook.com" target="_blank"><div class="image"></div>
+                            <h4>Money manager</h4><br>
+                            <p>2021</p>
+                        </a>
                     </div>
                     <div class="project" id="last-project-2020" toggled="false">
-                        <a href="" style="pointer-events: none;"><div class="image"></div></a>
-                        <h4>&nbsp;</h4>
-                        <p>&nbsp;</p>
+                        <a href="https://www.twitter.com" target="_blank" style="pointer-events: none;"><div class="image"></div>
+                            <h4>&nbsp;</h4><br>
+                            <p>&nbsp;</p>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="window draggable" toggled="false" style="width: 13vw; z-index: 1; top: 60vh; left: 17vw;">
+        <div id="logo" class="window glassmorphism draggable" toggled="false" style="width: 13vw; z-index: 1; top: 60vh; left: 17vw;">
             <div class="top-bar">
                 <div class="action close"></div>
                 <div class="action minimize"></div>
                 <!-- <div class="action maximize"></div> -->
-                <div class="title">Logo</div>
+                <div class="title">logo.png</div>
             </div>
             <div class="content">
                 <img src="images/logo.svg" draggable="false" alt="logo" class="logo">
             </div>
         </div>
 
-        <div class="window draggable" toggled="false" style="width: 25vw; z-index: 1; top: 15vh; right: 10vw;">
+        <div id="tasks" class="window glassmorphism draggable" toggled="false" style="width: 25vw; z-index: 1; top: 15vh; right: 10vw;">
             <div class="top-bar">
                 <div class="action close"></div>
                 <div class="action minimize"></div>
@@ -84,11 +87,13 @@
             </div>
         </div>
 
-    <script src="assets/js/interact.min.js"></script>
-    <script src="assets/js/drag.js"></script>
-    <script src="assets/js/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="assets/js/handleWindow.js"></script>
-    <script src="assets/js/tasks.js"></script>
-    <script src="assets/js/work.js"></script>
+        <div class="bottom-bar glassmorphism"></div>
+
+        <script src="assets/js/interact.min.js"></script>
+        <script src="assets/js/drag.js"></script>
+        <script src="assets/js/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="assets/js/handleWindow.js"></script>
+        <script src="assets/js/tasks.js"></script>
+        <script src="assets/js/work.js"></script>
     </body>
 </html>
