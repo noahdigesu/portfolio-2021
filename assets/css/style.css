@@ -25,6 +25,10 @@ body {
   border-radius: 20px;
 }
 
+.windows {
+  height: 100vh;
+}
+
 .windows #refresh {
   cursor: pointer;
   position: absolute;
